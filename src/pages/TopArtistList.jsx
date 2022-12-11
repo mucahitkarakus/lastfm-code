@@ -1,4 +1,5 @@
 import React from "react";
+import ArtistList from "../components/ArtistList/ArtistList";
 
 const TopArtistList = () => {
   return (
@@ -9,7 +10,7 @@ const TopArtistList = () => {
             <h2 className=" text-center text-white ">Top Artist List</h2>
           </div>
           <div className="bg-gradient-to-r from-pink-600  mt-11 w-[28rem] h-[30rem] overflow-y-auto scrollbar-thin scrollbar-thumb-pink-300">
-            Travis Scott
+            <ArtistList />
           </div>
         </div>
       </div>
