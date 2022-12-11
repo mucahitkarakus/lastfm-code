@@ -11,7 +11,7 @@ const DetailCard = () => {
             className="w-[5rem] h-[5rem] "
           />
           <h2 className="ml-5 flex justify-center items-center">
-            {state?.name}
+            Travis Scott
           </h2>
         </div>
         <div className="flex justify-between w-full mt-8 ml-4 ">
