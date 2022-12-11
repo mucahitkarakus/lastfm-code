@@ -1,18 +1,19 @@
 import React from "react";
-import {BsArrowReturnLeft} from "react-icons/bs";
-
+import DarkMode from "../components/Button/DarkMode";
+import Return from "../components/Button/Return";
 import TopAlbumList from "../components/DetailList/TopAlbumList";
 import TopTracks from "../components/DetailList/TopTracks";
 
 const DetailCard = () => {
   return (
     <div>
-      <div>
-        <BsArrowReturnLeft />
+      <div className="flex justify-between ">
+        <DarkMode />
+        <Return />
       </div>
 
       <div className="flex items-center justify-center w-screen h-[35rem] ">
-        <div className="flex flex-col items-center bg-gradient-to-r from-pink-600 w-[60vw] p-4 h-[40rem] text-white">
+        <div className="flex flex-col items-center bg-gradient-to-r from-pink-600 w-[60vw] p-4 h-[40rem] text-white  mt-[7rem]">
           <div className="flex ml-4 border p-5 h-[7rem] w-full mt-8 ">
             <img
               src="https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
