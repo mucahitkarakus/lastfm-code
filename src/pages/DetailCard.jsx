@@ -1,5 +1,6 @@
 import React from "react";
 import TopAlbumList from "../components/DetailList/TopAlbumList";
+import TopTracks from "../components/DetailList/TopTracks";
 
 const DetailCard = () => {
   return (
@@ -27,7 +28,7 @@ const DetailCard = () => {
             <h2>Top Tracks</h2>
             <hr />
             <div className="mt-11 w-full h-[20rem] overflow-y-scroll scrollbar-thin scrollbar-thumb-pink-300">
-              Top Track
+              <TopTracks />
             </div>
           </div>
         </div>
