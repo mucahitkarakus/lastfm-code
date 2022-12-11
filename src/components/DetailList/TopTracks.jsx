@@ -16,7 +16,6 @@ const TopTracks = () => {
         </div>
         <div className="flex ml-4 ">
           <h2>123123112312312</h2>
-          <a target="_blank">Play</a>
         </div>
       </div>
     </div>

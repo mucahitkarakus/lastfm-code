@@ -1,21 +1,30 @@
 import React from "react";
+import {useNavigate} from "react-router";
 
-const ArtistList = () => {
+const ArtistList = ({item}) => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <div className="flex items-center justify-between  bg-gradient-to-l from-pink-700 w-full h-[6rem] mt-3 cursor-pointer">
+      <div
+        className="flex items-center justify-between  bg-gradient-to-l from-pink-700 w-full h-[6rem] mt-3 cursor-pointer"
+        onClick={() => navigate("/detail")}
+      >
         <div className="flex ml-2">
-          <img src="" className="w-[5rem] h-[5rem]" alt="" />
+          <img
+            src={item.image[2]["#text"]}
+            className="w-[5rem] h-[5rem]"
+            alt=""
+          />
           <div className="ml-4">
-            <h2>Artist</h2>
-            <hr />
-            <p className="text-lg font-semibold">Travis Scott</p>
+            <h2> Travis Scott </h2> <hr />
+            <p className="text-lg font-semibold">{item.name}</p>
           </div>
         </div>
         <div className="ml-4">
-          <h2>Listener:12123312312312</h2>
+          <h2>Listener:{item.listeners}</h2>
           <br />
-          <h2>playcount:3124312312312</h2>
+          <h2>playcount:{item.playcount}</h2>
         </div>
       </div>
     </div>

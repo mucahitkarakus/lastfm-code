@@ -12,9 +12,6 @@ const TopAlbumList = () => {
       </div>
       <div className="ml-2 flex">
         <h2>132312312312</h2>
-        <a className="ml-2 mr-3" target="_blank">
-          Play
-        </a>
       </div>
     </div>
   );

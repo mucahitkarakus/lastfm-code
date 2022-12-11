@@ -1,8 +1,22 @@
-import React from "react";
-import ArtistList from "../components/ArtistList/ArtistList";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+import {fetchArtist} from "../features/artistSlice";
 import DarkMode from "../components/Button/DarkMode";
+import ArtistList from "../components/ArtistList/ArtistList";
 
 const TopArtistList = () => {
+  const artist = useSelector(
+    (state) => state?.artists?.artist?.artists?.artist
+  );
+  console.log(artist);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchArtist());
+  }, [dispatch]);
+
   return (
     <div>
       <div className="flex flex-col ">
@@ -11,8 +25,10 @@ const TopArtistList = () => {
           <div className="flex justify-center items-center bg-gradient-to-r from-pink-600 w-[8rem] h-[4rem]">
             <h2 className=" text-center text-white ">Top Artist List</h2>
           </div>
-          <div className="bg-gradient-to-r from-pink-600  mt-11 w-[28rem] h-[30rem] overflow-y-auto scrollbar-thin scrollbar-thumb-pink-300">
-            <ArtistList />
+          <div className="bg-gradient-to-r from-pink-600  mt-11 w-[28rem] h-[30rem] overflow-y-auto scrollbar-thin scrollbar-thumb-pink-300 ">
+            {artist?.map((item, idx) => (
+              <ArtistList key={idx} item={item} />
+            ))}
           </div>
         </div>
       </div>
