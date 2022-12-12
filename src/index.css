@@ -5,11 +5,14 @@
 
 .light {
     color: #000;
+}
+
+/* body {
     background-image: url("https://media.istockphoto.com/id/1336135980/tr/foto%C4%9Fraf/close-up-of-young-saxophone-player-hands-playing-alto-sax-musical-instrument-over-a-black.jpg?s=612x612&w=0&k=20&c=LnM44iesc6AIB-6MwuMhd0j4h4Tb1RZRgN4j5ZWBmPo=");
     transition-duration: 400ms;
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    height: auto;
+} */
 
 
 .dark {

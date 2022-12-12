@@ -6,7 +6,7 @@ const Card = ({item, name}) => {
   };
   return (
     <div
-      className="flex items-center justify-between  bg-gradient-to-l from-pink-700 w-full h-12  lg:h-24 mt-2 cursor-pointer"
+      className="flex items-center justify-between  bg-gradient-to-l from-pink-700 w-full h-20  lg:h-24 mt-2 cursor-pointer"
       onClick={handleClick}
     >
       <img

@@ -8,7 +8,7 @@ const Return = () => {
     <div>
       <GiReturnArrow
         onClick={() => navigate("/")}
-        className="w-[2rem] h-[2rem] text-white mt-5 cursor-pointer "
+        className="w-[2rem] h-[2rem]  mt-5 cursor-pointer "
       />
     </div>
   );

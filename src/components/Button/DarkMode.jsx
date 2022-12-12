@@ -15,9 +15,9 @@ const DarkMode = () => {
   return (
     <div className="ml-2" onClick={() => setTheme(!theme)}>
       {theme ? (
-        <MdDarkMode className="w-[2rem] h-[2rem] text-white mt-5 cursor-pointer " />
-      ) : (
         <CiDark className="w-[2rem] h-[2rem] text-white mt-5 cursor-pointer " />
+      ) : (
+        <MdDarkMode className="w-[2rem] h-[2rem] text-black mt-5 cursor-pointer " />
       )}
     </div>
   );

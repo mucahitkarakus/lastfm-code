@@ -30,8 +30,8 @@ const DetailCard = () => {
         <Return />
       </div>
 
-      <div className="flex md:flex-col  items-center justify-center w-full h-[35rem] ">
-        <div className="text-white bg-gradient-to-r from-pink-600 flex flex-col items-center  w-full md:w-[60vw] p-4">
+      <div className="flex md:flex-col  items-center justify-center w-full h-[40rem] ">
+        <div className="text-white bg-gradient-to-r from-pink-600 flex flex-col items-center  w-full lg:w-[70vw] p-4">
           <div className="flex ml-4 border p-5  w-full mt-8 ">
             <img
               src={state?.image[2]["#text"]}

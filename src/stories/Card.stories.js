@@ -33,19 +33,19 @@ export default{
 const Template = (args) => <Card {...args} />;
 
 export const KanyeWest = Template.bind({});
-KanyeWest.args = {
+  KanyeWest.args={
     item: albumItem,
-    name: "Kanye West"
-};
+    name: "Kanye West",
+  };
 
-export const Rihanna = Template.bind({});
-Rihanna.args = {
-    item: albumItem,
+  export const Rihanna = Template.bind({});
+  Rihanna.args = {
+    item:albumItem,
     name: "Rihanna"
-};
+  }
 
 export const Eminem = Template.bind({});
 Eminem.args = {
-    item:albumItem,
-    name: "Eminem"
+  item:albumItem,
+  name: "Eminem"
 }
