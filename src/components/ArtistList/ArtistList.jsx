@@ -17,7 +17,7 @@ const ArtistList = ({item}) => {
             alt=""
           />
           <div className="ml-4">
-            <h2> Travis Scott </h2> <hr />
+            <h2> Artist </h2> <hr />
             <p className="text-lg font-semibold">{item.name}</p>
           </div>
         </div>

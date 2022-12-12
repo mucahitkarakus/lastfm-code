@@ -4,8 +4,8 @@
 
 
 .light {
-    background-color: white;
     color: #000;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzVJ8H5YhLWQCwPUtRHZTiYCaAPVVIHWWc68ga03V&s");
     transition-duration: 400ms;
     background-repeat: no-repeat;
     background-size: cover;
