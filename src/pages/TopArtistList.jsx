@@ -9,7 +9,6 @@ const TopArtistList = () => {
   const artist = useSelector(
     (state) => state?.artists?.artist?.artists?.artist
   );
-  console.log(artist);
 
   const dispatch = useDispatch();
 
