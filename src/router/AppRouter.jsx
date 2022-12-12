@@ -9,7 +9,7 @@ const AppRouter = () => {
       <BrowserRouter>
         <Routes>
           <Route path="" element={<TopArtistList />} />
-          <Route path="/detail" element={<DetailCard />} />
+          <Route path="/detail/:id" element={<DetailCard />} />
         </Routes>
       </BrowserRouter>
     </div>

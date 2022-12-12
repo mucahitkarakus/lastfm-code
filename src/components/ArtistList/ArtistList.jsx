@@ -8,7 +8,7 @@ const ArtistList = ({item}) => {
     <div>
       <div
         className="flex items-center justify-between  bg-gradient-to-l from-pink-700 w-full h-[6rem] mt-3 cursor-pointer"
-        onClick={() => navigate("/detail")}
+        onClick={() => navigate(`/detail/${item.name}`, {state: item})}
       >
         <div className="flex ml-2">
           <img
