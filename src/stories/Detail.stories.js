@@ -33,12 +33,12 @@ const AlbumItem = {
     url:'https://www.last.fm/music/Undefined'
 };
 
-// export default{
-//     title: "album",
-//     component: ArtistList,
-// };
+export default{
+    title: "album",
+    component: ArtistList,
+};
 
-// const Template = (args) => <ArtistList {...args} />;
+const Template = (args) => <ArtistList {...args} />;
 
 // export const Drake = Template.bind({});
 // Drake.args={
