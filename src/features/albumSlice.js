@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
     album: [],
-    selectedItem: {},
+    // selectedItem: {},
     loading: false,
     error: "",
 };

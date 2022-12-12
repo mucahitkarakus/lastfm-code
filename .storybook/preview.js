@@ -1,4 +1,7 @@
-export const parameters = {
+import { Provider } from "react-redux";
+import { store } from "../src/app/store";
+
+export const parameter = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
@@ -6,4 +9,12 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
+
+export const decorators = [
+  (Story) => (
+    <Provider store={store}>
+      <Story />
+    </Provider>
+  ),
+];

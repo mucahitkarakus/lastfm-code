@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {useParams} from "react-router";
+import {useLocation, useParams} from "react-router";
 import {Link} from "react-router-dom";
 
 import {fetchAlbums} from "../features/albumSlice";
@@ -12,20 +12,19 @@ import TopAlbumList from "../components/DetailList/TopAlbumList";
 import TopTracks from "../components/DetailList/TopTracks";
 
 const DetailCard = () => {
-  const {name} = useParams();
+  const {state} = useLocation();
 
   const dispatch = useDispatch();
 
   const albums = useSelector((state) => state?.albums?.album?.topalbums?.album);
 
   const tracks = useSelector((state) => state?.tracks?.track?.toptracks?.track);
-
   console.log(tracks);
 
   useEffect(() => {
-    dispatch(fetchAlbums(name));
-    dispatch(fetchTracks(name));
-  }, []);
+    dispatch(fetchAlbums(state?.name));
+    dispatch(fetchTracks(state?.name));
+  }, [dispatch]);
 
   return (
     <div>
@@ -38,11 +37,13 @@ const DetailCard = () => {
         <div className="flex flex-col items-center bg-gradient-to-r from-pink-600 w-[60vw] p-4 h-[40rem] text-white  mt-[7rem]">
           <div className="flex ml-4 border p-5 h-[7rem] w-full mt-8 ">
             <img
-              src={albums?.image?.[2]["#text"]}
-              alt=""
+              src={tracks?.image[2]["#text"]}
+              alt="resim"
               className="w-[5rem] h-[5rem] "
             />
-            <h2 className="ml-5 flex justify-center items-center">{name}</h2>
+            <h2 className="ml-5 flex justify-center items-center">
+              {state?.name}
+            </h2>
           </div>
           <div className="flex justify-between w-full mt-8 ml-4 ">
             <div className="w-[45%]">
@@ -50,7 +51,7 @@ const DetailCard = () => {
               <hr />
               <div className="mt-11 w-full h-[20rem] overflow-y-scroll scrollbar-thin scrollbar-thumb-pink-300">
                 {albums?.map((item, idx) => (
-                  <TopAlbumList key={idx} item={item} name={name} />
+                  <TopAlbumList key={idx} item={item} name={state?.name} />
                 ))}
               </div>
             </div>
@@ -59,7 +60,7 @@ const DetailCard = () => {
               <hr />
               <div className="mt-11 w-full h-[20rem] overflow-y-scroll scrollbar-thin scrollbar-thumb-pink-300">
                 {tracks?.map((item, idx) => {
-                  <TopTracks key={idx} item={item} name={name} />;
+                  <TopTracks key={idx} item={item} name={state?.name} />;
                 })}
               </div>
             </div>
