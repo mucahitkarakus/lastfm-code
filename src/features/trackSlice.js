@@ -8,17 +8,30 @@ const initialState = {
     error: "",
   };
   
+  // export const fetchTracks = createAsyncThunk(
+  //   "tracks/fetchTracks",
+  //   async (name) => {
+  //     return fetch(
+  //       `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${name}&api_key=${process.env.REACT_APP_API_KEY}&format=json`
+  //     ).then((res) => res.json()).then(res => console.log(res.toptracks.track));
+  //   }
+  // );
+
+
   export const fetchTracks = createAsyncThunk(
-    "song/fetchTracks",
+    "tracks/fetchTracks",
     async (name) => {
+      const apiKey = process.env.REACT_APP_API_KEY;
       return fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${name}&api_key=${process.env.REACT_APP_API_KEY}&format=json`
-      ).then((res) => res.json()).then(res => console.log(res.toptracks));
+        `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${name}&api_key=${apiKey}&format=json`
+      ).then((res) => res.json());
     }
   );
   
+
+  
   export const trackSlice = createSlice({
-    name: "song",
+    name: "tracks",
     initialState,
     reducers: {},
     extraReducers: (builder) => {

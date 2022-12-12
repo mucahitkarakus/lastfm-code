@@ -1,5 +1,5 @@
 import React from 'react'
-import ArtistList from '../components/ArtistList/ArtistList';
+import Card from '../components/Card/Card';
 
 const AlbumItem = {
     image: [{
@@ -29,16 +29,20 @@ const AlbumItem = {
      },    
     ],
     name:"Sza",
-    playcoun: 9212906,
+    playcount: 9212906,
     url:'https://www.last.fm/music/SZA'
 };
 
 export default{
     title: "album",
-    component: ArtistList,
+    component: Card,
+    args:{}
 };
 
-const Template = (args) => <ArtistList {...args} />;
+const Template = (args) => {
+	return <Card {...args} />;
+};
+
 
 export const Drake = Template.bind({});
 Drake.args={
@@ -49,11 +53,11 @@ Drake.args={
 export const TaylorSwift= Template.bind({});
 TaylorSwift.args={
     item:AlbumItem,
-    name: "Taylor Swift"  
+    name: "Taylor Swift"
 }
 
 export const TheWeeknd = Template.bind({});
 TheWeeknd.args={
     item:AlbumItem,
-    name:"The Weeknd"
+    name: "The Weeknd"
 }
