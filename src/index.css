@@ -3,6 +3,40 @@
 @tailwind utilities;
 
 
-body {
-    background-color: blue;
+.light {
+    background-color: white;
+    color: #000;
+    transition-duration: 400ms;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+.dark {
+    color: #fff;
+    transition-duration: 400ms;
+    background: rgb(2, 0, 36);
+}
+
+
+
+
+/* button.light {
+    background-color: white;
+    color: #000;
+    transition-duration: 400ms;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+button.dark {
+    color: #fff;
+    transition-duration: 400ms;
+    background: rgb(2, 0, 36);
+}
+
+
+button {
+    transition-duration: 400ms;
+} */
