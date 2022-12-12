@@ -19,9 +19,9 @@ const DetailCard = () => {
   const tracks = useSelector((state) => state?.tracks?.track?.toptracks?.track);
 
   useEffect(() => {
-    dispatch(fetchAlbums(state.name));
-    dispatch(fetchTracks(state.name));
-  }, [dispatch]);
+    dispatch(fetchAlbums(state?.name));
+    dispatch(fetchTracks(state?.name));
+  }, [dispatch, state?.name]);
 
   return (
     <div>

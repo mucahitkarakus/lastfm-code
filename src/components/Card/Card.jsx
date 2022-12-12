@@ -11,7 +11,7 @@ const Card = ({item, name}) => {
     >
       <img
         src={item?.image[2]["#text"]}
-        className="w-20 h-20 image "
+        className="w-[5rem] h-[5rem] image "
         alt="resim"
       />
       <div className="flex justify-between items-center w-full text-center ml-4">
@@ -20,8 +20,8 @@ const Card = ({item, name}) => {
           <p className="text-md text-xs md:text-sm italic py-2">{name}</p>
         </div>
         <div className="flex w-1/3  flex-col justify-around">
-          <p className="playcount text-xs md:text-sm italic py-2">
-            {item?.listeners} Listener
+          <p className=" text-xs md:text-sm italic py-2">
+            {item?.listeners} Listener play
           </p>
           {item?.listeners && (
             <p className="playcount ml-2 flex md:text-sm italic py-2">
