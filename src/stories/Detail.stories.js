@@ -40,20 +40,20 @@ export default{
 
 const Template = (args) => <ArtistList {...args} />;
 
-// export const Drake = Template.bind({});
-// Drake.args={
-//     item: AlbumItem,
-//     name: "Drake"
-// };
+export const Drake = Template.bind({});
+Drake.args={
+    item: AlbumItem,
+    name: "Drake"
+};
 
-// export const TaylorSwift= Template.bind({});
-// TaylorSwift.args={
-//     item:AlbumItem,
-//     name: "Taylor Swift"  
-// }
+export const TaylorSwift= Template.bind({});
+TaylorSwift.args={
+    item:AlbumItem,
+    name: "Taylor Swift"  
+}
 
-// export const TheWeeknd = Template.bind({});
-// TheWeeknd.args={
-//     item:AlbumItem,
-//     name:"The Weeknd"
-// }
+export const TheWeeknd = Template.bind({});
+TheWeeknd.args={
+    item:AlbumItem,
+    name:"The Weeknd"
+}
