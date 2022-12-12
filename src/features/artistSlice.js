@@ -1,6 +1,5 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 
-
 const initialState = {
   artist: [],
   selectedItem: {},
@@ -10,7 +9,7 @@ const initialState = {
 
 export const fetchArtist = createAsyncThunk("data/fetchArtist", async () => {
   return fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${process.env.REACT_APP_API_KEY}&format=json`
+    `https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${process.env.REACT_APP_API_KEY}&format=json`
   ).then((res) => res.json());
 });
 
@@ -34,7 +33,5 @@ export const artistSlice = createSlice({
     });
   },
 });
-
-
 
 export default artistSlice.reducer;

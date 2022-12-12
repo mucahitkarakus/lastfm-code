@@ -11,7 +11,7 @@ export const fetchAlbums = createAsyncThunk(
   "albums/fetchAlbums",
   async (name) => {
     return fetch(
-      `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${name}&api_key=${process.env.REACT_APP_API_KEY}&format=json&`
+      `https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${name}&api_key=${process.env.REACT_APP_API_KEY}&format=json&`
     ).then((res) => res.json());
   }
 );

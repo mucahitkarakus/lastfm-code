@@ -12,7 +12,7 @@ export const fetchTracks = createAsyncThunk(
   async (name) => {
     const apiKey = process.env.REACT_APP_API_KEY;
     return fetch(
-      `http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${name}&api_key=${apiKey}&format=json`
+      `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${name}&api_key=${apiKey}&format=json`
     ).then((res) => res.json());
   }
 );
