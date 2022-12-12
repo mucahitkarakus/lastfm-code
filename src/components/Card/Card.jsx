@@ -20,7 +20,7 @@ const Card = ({item, name}) => {
           <p className="text-md text-xs md:text-sm italic py-2">{name}</p>
         </div>
         <div className="flex w-1/3  flex-col justify-around">
-          <p className=" text-xs md:text-sm italic py-2">
+          <p className="playcount text-xs md:text-sm italic py-2">
             {item?.listeners} Listener play
           </p>
           {item?.listeners && (
