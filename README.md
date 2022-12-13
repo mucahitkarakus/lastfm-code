@@ -1,70 +1,33 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Project-006 : Weather_Condition_App (JS-06)
 
-In the project directory, you can run:
+## Description
+Project aims to display current weather data of searched city around the world with fetching Weather Api data.
 
-### `npm start`
+## Learning Outcomes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+At the end of the this project, students will be able to;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- analyze a problem, create a weather condition app populated with a real weather api.
 
-### `npm test`
+- demonstrate their knowledge of algorithmic design principles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   
+## Problem Statement
 
-### `npm run build`
+- Design a weather condition page following the design and populate data for searched city with using of axios in JS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Form](lastfm.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+User story;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - User can search city around the world.
+  - The app can fetch api with the searched city name(... and apikey if it is obligatory).
+  - User can display weather data of searched city in weather card.
+  - User can display list of searched city weather data card like on gif.
+  - If new searched city is in the weather data list, app can display a warning text to user on page.
 
-### `npm run eject`
+🔥 You can use [OpenWeather Api](https://openweathermap.org/) for your app. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔥 You don’t need to create a new template for this project, you can use [Weather Condition_App](https://github.com/clarusway/clarusway-full-stack-9-21/tree/main/javascript/projects/006%20-%20Weather_Condition_App(JS-06)) template for html and css. We will be concerned in javascript side.
