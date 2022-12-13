@@ -23,17 +23,16 @@ User can turn dark mode on and off
 
 ### Technologie
 
--React
+- React
 <br/>
--React Router Dom
+- React Router Dom
 <br/>
--Redux Toolkit
+- Redux Toolkit
 <br/>
--React Icons
+- React Icons
 <br/>
--Cypress Testing
+- Cypress Testing
 <br/>
--TailwindCSS
+- TailwindCSS
 <br/>
--Storybook
-
+- Storybook
