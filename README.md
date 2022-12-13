@@ -7,7 +7,7 @@
 
 ## LAST.FM 
 
-#### This application "Top Artists" and "Top Albums" and "Top Tracks" of these artists can be accessed.
+#### Data in the project is taken from the Last.fm API.This application "Top Artists" and "Top Albums" and "Top Tracks" of these artists can be accessed.
 
 
 ### Technologie
