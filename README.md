@@ -24,6 +24,9 @@ User can turn dark mode on and off
 ### Technologie
 
 -React
+<br/>
 -Redux Toolkit
+<br/>
 -Cypress Testing
+<br/>
 -Storybook
