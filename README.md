@@ -25,8 +25,11 @@ User can turn dark mode on and off
 
 -React
 <br/>
+-React Router Dom
+<br/>
 -Redux Toolkit
 <br/>
 -Cypress Testing
 <br/>
 -Storybook
+
