@@ -1,9 +1,9 @@
 
 
-# Project-006 : Weather_Condition_App (JS-06)
+# Case Study : LAST FM 
 
 ## Description
-Project aims to display current weather data of searched city around the world with fetching Weather Api data.
+
 
 ## Learning Outcomes
 
