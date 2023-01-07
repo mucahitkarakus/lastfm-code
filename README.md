@@ -26,7 +26,7 @@ User can turn dark mode on and off
 - React
 - React Router Dom
 - Redux Toolkit
-- React Icons
+- React Icons.
 - Cypress Testing.
 - TailwindCSS.
 - Storybook.
