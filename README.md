@@ -28,5 +28,5 @@ User can turn dark mode on and off
 - Redux Toolkit
 - React Icons
 - Cypress Testing
-- TailwindCSS
+- TailwindCSS.
 - Storybook.
