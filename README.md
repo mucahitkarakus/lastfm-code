@@ -29,4 +29,4 @@ User can turn dark mode on and off
 - React Icons
 - Cypress Testing
 - TailwindCSS
-- Storybook
+- Storybook.
