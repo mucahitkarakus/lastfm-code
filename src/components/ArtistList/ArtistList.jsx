@@ -16,12 +16,16 @@ const ArtistList = ({item}) => {
             className="w-[5rem] h-[5rem]"
             alt=""
           />
-          
+
+
+
           <div className="ml-4">
             <h2 className="text-sm md:text-lg"> Artist </h2> <hr />
             <p className="text-sm md:text-lg">{item.name}</p>
           </div>
         </div>
+
+        
         <div className="ml-4 text-sm md:text-lg">
           <h2>Listener:{item.listeners}</h2>
           <br />
